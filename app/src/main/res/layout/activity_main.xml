@@ -1,0 +1,153 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Reset"
+        android:layout_margin="8dp"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:background="#61d800"></Button>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="Team A"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:id="@+id/score_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="56sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="IncPointThree"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="+3 Points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="IncPointTwo"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:text="+2 Points"
+            android:textAllCaps="true"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="freeThrow"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Free Throw"
+            android:textAllCaps="true"></Button>
+    </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="390dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="Team B"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:id="@+id/scoreb_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="56sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setScoreb3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="+3 Points"
+            android:textAllCaps="true"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setScoreb2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:text="+2 Points"
+            android:textAllCaps="true"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setScorebfree"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Free Throw"
+            android:textAllCaps="true"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</RelativeLayout>
